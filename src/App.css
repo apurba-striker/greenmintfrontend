@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+/* App.css - Global Dark Theme Support */
+
+/* Apply theme to body */
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Plant Grid Dark Theme */
+[data-theme="dark"] .plant-grid-container {
+  color: var(--text-primary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+[data-theme="dark"] .plant-filters .card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+[data-theme="dark"] .plant-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
 }
 
-.App-link {
-  color: #61dafb;
+[data-theme="dark"] .form-input,
+[data-theme="dark"] .form-select {
+  background: var(--bg-tertiary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+[data-theme="dark"] .form-input:focus,
+[data-theme="dark"] .form-select:focus {
+  border-color: var(--brand-primary);
+  background: var(--bg-secondary);
+}
+
+/* Loading and Error Components */
+[data-theme="dark"] .loading-spinner {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .error-message {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+}
+
+/* Modal Dark Theme */
+[data-theme="dark"] .modal-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="dark"] .add-plant-modal {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
 }
