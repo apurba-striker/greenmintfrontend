@@ -152,8 +152,7 @@ const Header = ({ showAddForm, setShowAddForm, plants }) => {
               }
             }}
           >
-            <span className="logo-plant" aria-hidden="true">🌱</span>
-            <span className="logo-text gradient-text">URVANN</span>
+            <span className="logo-text gradient-text">GreenMint</span>
           </div>
 
           {/* Desktop Navigation */}
